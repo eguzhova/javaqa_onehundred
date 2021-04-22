@@ -54,6 +54,7 @@
                     </execution>
                     <execution>
                         <id>check</id>
+                        <phase>verify</phase>
                         <goals>
                             <goal>check</goal>
                         </goals>
@@ -64,9 +65,9 @@
                         <rule>
                             <limits>
                                 <limit>
-                                    <counter>BRANCH</counter>
+                                    <counter>INSTRUCTION</counter>
                                     <value>COVEREDRATIO</value>
-                                    <minimum>100%</minimum>
+                                    <minimum>1</minimum>
                                 </limit>
                             </limits>
                         </rule>
